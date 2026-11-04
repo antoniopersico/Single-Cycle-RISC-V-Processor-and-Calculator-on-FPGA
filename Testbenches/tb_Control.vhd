@@ -1,9 +1,8 @@
 -- Self-checking unit test for ControlUnit and ALUDecoder.
---  1) ControlUnit: control signals for each opcode (including unused opcodes).
---  2) ALUDecoder: table (ALUOp, funct3, funct7_5) -> ALUControl.
---  3) Full chain: 32-bit instruction -> ControlUnit -> ALUDecoder -> ALUControl,
---     with the real instructions of the program and those the ROM does not use
---     (andi, ori, xori, slti, slli, srli, slt).
+--  1 ControlUnit: control signals for each opcode (including unused opcodes).
+--  2 ALUDecoder: table (ALUOp, funct3, funct7_5) -> ALUControl.
+--  3 Full chain: 32-bit instruction -> ControlUnit -> ALUDecoder -> ALUControl,
+
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
