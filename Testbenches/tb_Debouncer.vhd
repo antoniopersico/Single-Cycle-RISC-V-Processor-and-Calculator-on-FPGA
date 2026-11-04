@@ -1,5 +1,4 @@
 -- Self-checking unit test for the debouncer, with CLK_LIMIT reduced to 10 cycles
--- (the real value is 1,000,000 = 20 ms at 50 MHz; the logic is identical).
 --   - single, one-cycle pulse after a stable press
 --   - no pulse for bounces or presses shorter than the limit
 --   - no pulse on release
