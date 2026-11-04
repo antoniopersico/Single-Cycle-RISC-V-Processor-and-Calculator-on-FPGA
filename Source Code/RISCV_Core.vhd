@@ -1,4 +1,3 @@
--- RISCV_Core.vhd
 -- Single-cycle RISC-V core with a simple interrupt mechanism.
 -- It connects the fetch, decode, execute and write-back blocks and computes the next PC.
 -- Data memory and peripherals are outside the core (MMIO_Decoder): the core exposes the
